@@ -31,7 +31,7 @@ type MessageCardProps = {
     onMessageDelete: (messageId: string) => void;
 }
 
-const MessageCard = ({message, onMessageDelete}) => {
+const MessageCard = ({message, onMessageDelete}: MessageCardProps) => {
     
     const {toast} = useToast()
 

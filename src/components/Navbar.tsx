@@ -20,14 +20,7 @@ const Navbar = () => {
             <span className="mr-4">
               Welcome, {user?.username || user?.email}!
             </span>
-            <Link href="/dashboard">
-            <Button
-              className="w-full md:w-auto bg-slate-100 text-black"
-              variant="outline"
-            >
-              Dashboard
-            </Button>
-            </Link>
+            
             <Button
               onClick={() => signOut()}
               className="md:w-auto bg-slate-100 text-black"

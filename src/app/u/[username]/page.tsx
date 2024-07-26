@@ -44,7 +44,7 @@ export default function SendMessage() {
     isLoading: isSuggestLoading,
     error,
   } = useCompletion({
-    api: '/api/suggest-messages',
+    // api: '/api/suggest-messages',
     initialCompletion: initialMessageString,
   });
 
@@ -86,14 +86,14 @@ export default function SendMessage() {
     }
   };
 
-  const fetchSuggestedMessages = async () => {
-    try {
-      complete('');
-    } catch (error) {
-      console.error('Error fetching messages:', error);
-      // Handle error appropriately
-    }
-  };
+  // const fetchSuggestedMessages = async () => {
+  //   try {
+  //     complete('');
+  //   } catch (error) {
+  //     console.error('Error fetching messages:', error);
+  //     // Handle error appropriately
+  //   }
+  // };
 
   return (
     <div className="container mx-auto my-8 p-6 bg-white rounded max-w-4xl">

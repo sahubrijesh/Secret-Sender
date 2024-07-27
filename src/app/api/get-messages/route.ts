@@ -35,10 +35,10 @@ export async function GET(request:Request) {
         if(!user || user.length === 0) {
             return Response.json(
                 {
-                    success: false,
-                    message: "User not found",
+                    success: true,
+                    message: "No messages",
                 },
-                { status: 404 }
+                { status: 200}
             );
         }
 
@@ -65,3 +65,4 @@ export async function GET(request:Request) {
     }
 
 }
+

@@ -1,25 +1,29 @@
-"use client";
-import React from "react";
-import messages from "@/messages.json";
-import Autoplay from "embla-carousel-autoplay";
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Mail } from 'lucide-react'; // Assuming you have an icon for messages
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Autoplay from 'embla-carousel-autoplay';
+import messages from '@/messages.json';
+
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail } from "lucide-react";
+} from '@/components/ui/carousel';
 
 export default function Home() {
   return (
     <>
       {/* Main content */}
-      <main className="flex-grow flex flex-col items-center justify-center px-4 md:px-24 py-12 bg-gray-800 text-white h-screen">
+      <main className="flex-grow flex flex-col items-center justify-center px-4 md:px-24 py-12 bg-gray-800 text-white">
         <section className="text-center mb-8 md:mb-12">
           <h1 className="text-3xl md:text-5xl font-bold">
-            Dive into the World of Anonymous Feedback
+            Dive into the World of Secret Message
           </h1>
           <p className="mt-3 md:mt-4 text-base md:text-lg">
             Secret Sender - Where your identity remains a secret.
@@ -52,8 +56,12 @@ export default function Home() {
             ))}
           </CarouselContent>
         </Carousel>
-
       </main>
+
+      {/* Footer */}
+      <footer className="text-center p-4 md:p-6 bg-gray-900 text-white">
+        © 2024 Secret Sender. All rights reserved.
+      </footer>
     </>
   );
 }

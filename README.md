@@ -1,36 +1,157 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Secret Sender
 
-First, run the development server:
+  
+
+## Overview
+
+  
+
+Secret Sender is a web application that allows users to send and receive secret messages while keeping their identities anonymous. The application features a carousel to display messages, user authentication, and a user-friendly interface for creating and managing accounts.
+
+  
+
+## Table of Contents
+
+  
+
+- [Overview](#overview)
+
+- [Features](#features)
+
+- [Installation](#installation)
+
+- [Technologies Used](#technologies-used)
+
+- [Usage](#usage)
+
+- [Contributing](#contributing)
+
+- [License](#license)
+
+  
+
+## Features
+
+  
+
+-  **Anonymous Messaging**: Send and receive messages without revealing your identity.
+
+-  **Message Carousel**: Display messages in a carousel with autoplay functionality.
+
+-  **User Authentication**: Secure login and sign-up using NextAuth.
+
+-  **Responsive Design**: Optimized for both desktop and mobile devices.
+
+  
+
+## Technologies Used
+
+  
+
+• **Frontend**: Next.js, TypeScript, Tailwind CSS
+
+  
+
+• **Backend**: Node.js, Express.js
+
+  
+
+• **Database**: MongoDB
+
+  
+
+• **Authentication**: JWT (JSON Web Tokens)
+
+  
+
+• **Encryption**: AES (Advanced Encryption Standard)
+
+  
+
+## Installation
+
+  
+
+1.  **Clone the repository**:
+
+```bash
+git clone https://github.com/yourusername/secret-sender.git
+cd secret-sender
+```
+
+  
+
+2.  **Install dependencies**:
+
+```bash
+npm install
+```
+
+3.  **Set up environment variables**:
+
+Create a `.env.local` file in the root directory and add your environment variables. Refer to `.env.example` for the required variables.
+
+  
+
+4.  **Run the development server**:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+5.  **Open your browser**:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Navigate to `http://localhost:3000` to see the application in action.
 
-## Learn More
+  
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  
+### Home Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+The home page features a carousel that displays messages fetched from a JSON file. The carousel uses the `embla-carousel-autoplay` plugin for autoplay functionality.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### User Authentication
+
+  
+User authentication is handled using NextAuth. Ensure you have the necessary environment variables set up for authentication to work correctly.
+
+  
+
+### Message Board
+
+  
+Users can create an account and get their own message board by navigating to the sign-up page.
+
+## Contributing
+
+
+We welcome contributions to improve Secret Sender. To contribute:
+ 
+
+1. Fork the repository.
+
+2. Create a new branch (`git checkout -b feature-branch`).
+
+3. Make your changes.
+
+4. Commit your changes (`git commit -m 'Add some feature'`).
+
+5. Push to the branch (`git push origin feature-branch`).
+
+6. Open a pull request.
+
+  
+
+## License
+
+  
+
+This project is licensed under the MIT License. See the LICENSE file for details.

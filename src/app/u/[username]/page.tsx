@@ -32,7 +32,7 @@ const parseStringMessages = (messageString: string): string[] => {
 };
 
 const initialMessageString =
-  "What's your favorite movie?||Do you have any pets?||What's your dream job?";
+  "You’re the bravest person I know! || You have the courage of your convictions. || Your smile is contagious.";
 
 export default function SendMessage() {
   const params = useParams<{ username: string }>();
